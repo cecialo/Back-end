@@ -1,4 +1,4 @@
-# Presentación del menú con los tipos de pizza
+# Presentación del menú con los tipos de servicios automovilisticos
 print("Bienvenido a consiente tu vehículo.\nTipos de servicio\n\t1- lavado rápido\n\t2- lavado profundo\n\t3- Alquiler tipo A\n\t4- Alquiler tipo B\n\t5- Alquiler tipo C\n\t6- Estacionamiento por tres horas\n")
 tipo = input("Introduce el número correspondiente al tipo de servicio que quieres:")
 # Decisión sobre el tipo de servicio que quieres
