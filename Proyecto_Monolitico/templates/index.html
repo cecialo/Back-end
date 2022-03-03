@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+	<!-- Special Products section starts-->
+			<div class="section outdiv" id="specialities">
+			<div class="container">
+			<div class="col-md-12"><h1 class="text-center wow pulse"><span>Nuestros Productos</span></h1>
+						<p class="sub-headers text-center">Los Mas elegidos por nuestros clientes!</p>
+				
+					<div class="speciality wow fadeIn" data-wow-delay="0.6s">
+
+				{% for item in prod %}
+					<div class="spe-prods">
+						<div class="mainbox">
+							<h3>{{item.nombre_producto}}</h3>
+							
+							<img class="rotprod" src="{{url_for('static',filename='')}}{{item.picture}}">
+						</div>
+						<div class="price-big">
+							<div>
+								<div class="floatting-price">
+									<h3>${{item.precio}}</h3>
+								</div>
+								<div class="month">
+									<p>/ piece</p>
+								</div>
+							</div>
+							<div class="ordersection">
+									<a href="#" class="buybtn">Order</a>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+
+				</div>
+			</div>   
+			</div>
+				
+		</div>                           
+				
+	<script>
+			//Initializing WOW aninations
+			new WOW().init();
+	</script>
+
+{% endblock content %}
